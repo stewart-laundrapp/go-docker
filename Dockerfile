@@ -9,6 +9,9 @@ LABEL maintainer="Stewart Flack"
 # Set the Current Working Directory inside the container
 WORKDIR /app
 
+# Build Arguements for logging
+ARG LOG_DIR=/app/logs
+#Creating the log directory
 # Copy go mod and sum files
 COPY go.mod go.sum ./
 
